@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assistance GWIN</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+  :root {
+    --bg: #161A28;
+    --card: #212642;
+    --card-border: #343B5C;
+    --accent: #2563EB;
+    --gold: #D4AF37;
+    --text: #FFFFFF;
+    --text-muted: #9098B8;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 12px;
+  }
+
+  h1 {
+    font-size: clamp(32px, 6vw, 44px);
+    font-weight: 800;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+
+  .lede {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 46ch;
+    margin: 0 0 48px;
+  }
+
+  section { margin-bottom: 40px; }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    margin: 0 0 16px;
+  }
+
+  .faq { display: flex; flex-direction: column; gap: 10px; }
+
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+
+  .faq-item .q { font-size: 15px; font-weight: 700; margin: 0 0 6px; }
+  .faq-item .a { font-size: 14.5px; line-height: 1.55; color: var(--text-muted); margin: 0; }
+
+  .contact-card {
+    background: linear-gradient(135deg, var(--accent), #1D4ED8);
+    border-radius: 16px;
+    padding: 28px 24px;
+  }
+
+  .contact-card p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+    margin: 0 0 14px;
+    line-height: 1.5;
+  }
+
+  .mail-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #FFFFFF;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 13px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    border-top: 1px solid var(--card-border);
+    font-size: 12.5px;
+    color: var(--text-muted);
+  }
+
+  footer .brand { font-weight: 800; color: var(--text); letter-spacing: 0.3px; }
+  footer .brand span { color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Assistance</p>
+  <h1>On répond à tes questions sur GWIN</h1>
+  <p class="lede">Le jeu de pronostics gratuit qui réunit Ligue 1, Liga et Premier League dans une seule grille chaque semaine.</p>
+
+  <section>
+    <h2>Questions fréquentes</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <p class="q">Comment fonctionne le jeu ?</p>
+        <p class="a">Chaque semaine, une nouvelle grille de 15 matchs sélectionnés en Ligue 1, Liga et Premier League. Pronostique 1, N ou 2 pour chaque rencontre, puis valide ta grille avant le coup d'envoi du premier match.</p>
+      </div>
+      <div class="faq-item">
+        <p class="q">Comment gagner le lot de la semaine ?</p>
+        <p class="a">Réalise un pronostic exact sur les 15 matchs de ta grille ("15/15"). Le lot mis en jeu varie chaque semaine et est décrit dans l'application.</p>
+      </div>
+      <div class="faq-item">
+        <p class="q">Le jeu est-il payant ?</p>
+        <p class="a">Non. GWIN est gratuit, sans obligation d'achat, y compris pour participer au jeu-concours.</p>
+      </div>
+      <div class="faq-item">
+        <p class="q">Où trouver le règlement du jeu-concours ?</p>
+        <p class="a">Directement dans l'application, sur l'écran "Règles du jeu" (onglet Profil).</p>
+      </div>
+      <div class="faq-item">
+        <p class="q">Comment supprimer mon compte ?</p>
+        <p class="a">Depuis l'onglet Profil, ouvre les paramètres du compte puis "Supprimer mon compte". La suppression est immédiate et définitive.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Une autre question ?</h2>
+    <div class="contact-card">
+      <p>Écris-nous directement, on répond personnellement à chaque message.</p>
+      <a class="mail-btn" href="mailto:dineropronos@gmail.com?subject=Assistance%20GWIN">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="m4 6 8 7 8-7"/></svg>
+        dineropronos@gmail.com
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <span class="brand">GWIN<span>.</span></span>
+    <span>Jeu-concours gratuit — France métropolitaine</span>
+  </footer>
+</div>
+</body>
+</html>
