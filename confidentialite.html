@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité GWIN</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+  :root {
+    --bg: #161A28;
+    --card: #212642;
+    --card-border: #343B5C;
+    --accent: #2563EB;
+    --gold: #D4AF37;
+    --text: #FFFFFF;
+    --text-muted: #9098B8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 64px 24px 96px; }
+  .eyebrow {
+    font-size: 12px; font-weight: 700; color: var(--accent);
+    text-transform: uppercase; letter-spacing: 2px; margin: 0 0 12px;
+  }
+  h1 { font-size: clamp(32px, 6vw, 44px); font-weight: 800; margin: 0 0 8px; text-wrap: balance; }
+  .lede { font-size: 15px; line-height: 1.6; color: var(--text-muted); max-width: 52ch; margin: 0 0 48px; }
+  section { margin-bottom: 18px; }
+  .card {
+    background: var(--card); border: 1px solid var(--card-border);
+    border-radius: 14px; padding: 20px 22px;
+  }
+  .card h2 { font-size: 15px; font-weight: 800; color: var(--accent); margin: 0 0 10px; }
+  .card p { font-size: 14.5px; line-height: 1.6; color: var(--text-muted); margin: 0; }
+  .card a { color: var(--accent); }
+  footer {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    padding-top: 24px; margin-top: 24px; border-top: 1px solid var(--card-border);
+    font-size: 12.5px; color: var(--text-muted);
+  }
+  footer .brand { font-weight: 800; color: var(--text); letter-spacing: 0.3px; }
+  footer .brand span { color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Confidentialité</p>
+  <h1>Politique de confidentialité de GWIN</h1>
+  <p class="lede">Ce que GWIN collecte, pourquoi, et comment tu gardes le contrôle sur tes données.</p>
+
+  <section class="card">
+    <h2>Qui traite tes données</h2>
+    <p>GWIN est édité par un développeur indépendant. Les données sont hébergées chez Firebase (Google Cloud), dans l'Union européenne. GWIN ne vend ni ne partage tes données avec des tiers à des fins publicitaires.</p>
+  </section>
+
+  <section class="card">
+    <h2>Ce que GWIN collecte</h2>
+    <p>À l'inscription : ton adresse email et ton mot de passe (géré par Firebase Authentication, jamais stocké en clair côté GWIN). Ensuite, selon ton usage : ton pseudo, une photo de profil si tu en ajoutes une, tes pronostics et grilles hebdomadaires, ton classement et tes points, ta liste d'amis et les demandes envoyées/reçues, les utilisateurs que tu bloques ou signales, et — uniquement si tu actives les notifications — un identifiant technique d'appareil (jeton Expo Push) qui sert uniquement à t'envoyer les rappels de l'app.</p>
+  </section>
+
+  <section class="card">
+    <h2>Pourquoi ces données</h2>
+    <p>Chaque donnée sert directement une fonctionnalité que tu utilises : le pseudo et la photo pour ton profil et le classement, les pronostics pour calculer tes points, la liste d'amis pour comparer vos classements, le jeton de notification pour te prévenir qu'une nouvelle grille est disponible. Aucune donnée n'est collectée à des fins publicitaires ou de profilage.</p>
+  </section>
+
+  <section class="card">
+    <h2>Combien de temps</h2>
+    <p>Tes données sont conservées tant que ton compte existe. Si tu supprimes ton compte depuis l'écran Profil, ton pseudo, ta photo, tes données personnelles et tes accès sont supprimés immédiatement. Ton historique de pronostics passés reste anonymisé dans les statistiques globales du jeu (plus aucun lien avec toi une fois le compte supprimé).</p>
+  </section>
+
+  <section class="card">
+    <h2>Tes droits</h2>
+    <p>Conformément au RGPD, tu peux à tout moment consulter, corriger ou supprimer tes données depuis l'écran Profil, ou nous contacter pour toute question à <a href="mailto:dineropronos@gmail.com">dineropronos@gmail.com</a>.</p>
+  </section>
+
+  <section class="card">
+    <h2>Services tiers</h2>
+    <p>GWIN utilise Firebase (authentification, base de données, notifications) et API-Football (uniquement pour récupérer calendriers et résultats officiels, aucune donnée personnelle ne leur est transmise). Aucun outil publicitaire ou de tracking comportemental n'est intégré à l'app.</p>
+  </section>
+
+  <footer>
+    <span class="brand">GWIN<span>.</span></span>
+    <span><a href="/" style="color:inherit">Assistance</a> · France métropolitaine</span>
+  </footer>
+</div>
+</body>
+</html>
